@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/barlow-light.woff2"),
+    url("../fonts/barlow-light.woff"),
+    url("../fonts/barlow-light.ttf");
+  font-weight: 300;
+  font-display: swap;
+}

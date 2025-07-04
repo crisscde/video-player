@@ -1,0 +1,103 @@
+@import "./buttons.css";
+@import "./fonts.css";
+
+:root {
+  --white: #fff;
+  --main: #0000bf;
+  --progress: #2600bf;
+  --bg-progress: #ccbbd6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: .15rem;
+  color: var(--white);
+  background-color: var(--main);
+  margin: 40px;
+}
+
+.wrapper {
+  max-inline-size: 900px;
+  margin: auto;
+  margin-block-start: 125px;
+  position: relative;
+}
+
+.wrapper-icon {
+  position: absolute;
+  inline-size: 200px;
+  block-size: 200px;
+}
+
+.right {
+  inset-block-start: -90px;
+  inset-inline-start: -90px;
+}
+
+.player {
+  position: relative;
+}
+
+.player video {
+  object-fit: cover;
+  inline-size: 100%;
+  aspect-ratio: 16/10;
+}
+
+.player-title {
+  position: absolute;
+  inset-block-start: 15px;
+  inset-inline-start: 15px;
+}
+
+.player-actions {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-progress {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline: 0;
+  padding: 15px;
+  display: flex;
+}
+
+.player-progress input {
+  flex: 1;
+  appearance: none;
+  height: 6px;
+  background-color: var(--bg-progress);
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+.player-progress input::-webkit-slider-thumb {
+  appearance: none;
+  background-color: var(--progress);
+  height: 6px;
+  width: 6px;
+  cursor: pointer;
+  box-shadow: -407px 0 0 409px var(--progress);
+}
+.player-controls {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: .3s opacity;
+}
+
+.player:hover .player-controls {
+  opacity: 1;
+}

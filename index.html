@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="shortcut icon" href="./images/icon.svg" type="image/x-icon">
+</head>
+<body>
+  <div class="wrapper">
+    <img
+      src="./images/icon.svg"
+      alt="Icono de FDE"
+      class="wrapper-icon right">
+    <div class="player">
+      <video
+        src="./video/krav_maga_nsqk.mp4"
+        poster="./images/poster.png"
+        class="player-video"
+        id="video"
+        width="400">
+      </video>
+      <div class="player-controls">
+        <h2 class="player-title">krav magá - nsqk</h2>
+        <div class="player-actions">
+          <button
+            class="action-button backward"
+            id="backward"
+            aria-label="Retroceder 10 segundos"
+            title="Retroceder 10 segundos"></button>
+          <button
+            class="action-button play"
+            id="play"
+            aria-label="Reproducir"
+            title="Reproducir"></button>
+          <button
+            class="action-button pause"
+            id="pause"
+            aria-label="Pausar"
+            title="Pausar"
+            hidden></button>
+          <button
+            class="action-button forward"
+            id="forward"
+            aria-label="Avanzar 10 segundos"
+            title="Avanzar 10 segundos"></button>
+        </div>
+        <div class="player-progress">
+          <input
+            type="range"
+            class="progress"
+            id="progress"
+            min="0"
+            value="0"
+            step="1"
+            aria-label="Barra de progreso">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./javascript/index.js"></script>
+</body>
+</html>
