@@ -20,13 +20,15 @@ body {
   letter-spacing: .15rem;
   color: var(--white);
   background-color: var(--main);
-  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  margin-inline: 50px;
 }
 
 .wrapper {
   max-inline-size: 900px;
-  margin: auto;
-  margin-block-start: 125px;
   position: relative;
 }
 
@@ -34,9 +36,6 @@ body {
   position: absolute;
   inline-size: 200px;
   block-size: 200px;
-}
-
-.right {
   inset-block-start: -90px;
   inset-inline-start: -90px;
 }
