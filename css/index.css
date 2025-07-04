@@ -34,10 +34,10 @@ body {
 
 .wrapper-icon {
   position: absolute;
-  inline-size: 200px;
-  block-size: 200px;
-  inset-block-start: -90px;
-  inset-inline-start: -90px;
+  inline-size: 150px;
+  block-size: 150px;
+  inset-block-start: -68px;
+  inset-inline-start: -68px;
 }
 
 .player {
